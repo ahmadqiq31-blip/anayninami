@@ -3,7 +3,9 @@ import time
 import sys
 import os
 
-# Windows için ANSI color support
+if os.name == 'nt':
+    os.system('title ZahmadChecker')
+
 if sys.platform == "win32":
     os.system("")
 
